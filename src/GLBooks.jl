@@ -2,8 +2,11 @@
 __precompile__(false)
 module GLBooks
 
-using Colors, Images, Reactive, GeometryTypes, GLAbstraction, GLWindow, FileIO
+# GL packages
 import GLVisualize
+using GeometryTypes, GLAbstraction, GLWindow
+
+using Colors, Images, Reactive, FileIO
 import GLVisualize: mm, layoutscreens, IRect, _view, visualize, glscreen
 import GLVisualize: x_partition_abs, loadasset
 import GLWindow: hide!, show!
