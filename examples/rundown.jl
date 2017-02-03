@@ -2,7 +2,6 @@ using GLVisualize, FileIO, Colors
 using GLBooks, Reactive
 
 GLBooks.init()
-dir = homedir()*"/Desktop/lesson/"
 
 surf(i, N) = Float32[sin(x*i) * cos(y*i) for x = linspace(0, 2pi, N), y = linspace(0, 2pi, N)]
 

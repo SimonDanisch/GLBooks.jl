@@ -131,7 +131,7 @@ function playbutton(f, name)
     preserve(map(f, signal))
 end
 
-function slider(range, name; slider_length = 6*icon_size(), kw_args...)
+function slider(range, name; slider_length = 5*icon_size(), kw_args...)
     visual, signal = GLVisualize.labeled_slider(
         range, edit_screen(); slider_length = slider_length, kw_args...
     )
