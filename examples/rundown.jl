@@ -7,7 +7,7 @@ dir = homedir()*"/Desktop/lesson/"
 surf(i, N) = Float32[sin(x*i) * cos(y*i) for x = linspace(0, 2pi, N), y = linspace(0, 2pi, N)]
 
 @block "Overview" begin
-    load(dir*"overview.png")
+    loadasset("doge.png")
 end
 
 @block "Surface" begin
@@ -17,7 +17,7 @@ end
 
 
 @block "Surface with Image" begin
-    video = load(dir * "funky.gif")
+    video = loadasset("kittens-look.gif")
     play_s = playbutton("play")
     idx = foldp(1, fpswhen(play_s, 30.0)) do v0, t
         mod1(v0 + 1, size(video, 3))

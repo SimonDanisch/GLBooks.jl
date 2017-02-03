@@ -19,8 +19,8 @@ function play_controls(screen)
     ]
 
     imgs = map(paths) do path
-        img = map(RGBA{U8}, loadasset(path))
-        img, flipdim(img, 1)
+        img = convert(Matrix{RGBA{N0f8}}, loadasset(path))
+        img, flipdim(img, 2)
     end
     # create buttons
     iconrect = IRect(0, 0, icon_size(), icon_size())
