@@ -4,7 +4,7 @@ module GLBooks
 
 # GL packages
 import GLVisualize
-using GeometryTypes, GLAbstraction, GLWindow
+using GeometryTypes, GLWindow
 
 using Colors, Images, Reactive, FileIO
 import GLVisualize: mm, layoutscreens, IRect, _view, visualize, glscreen
